@@ -1,1 +1,378 @@
-/* Add your CSS here */
+/* Intel Branding and Styling */
+
+/* Set global styles for the page */
+body {
+  /* Remove default margins */
+  margin: 0;
+  padding: 0;
+  
+  /* Use clean, readable font */
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header / Hero Section with Intel branding */
+header {
+  /* Intel blue background for brand recognition */
+  background-color: #0071C5;
+  
+  /* Add padding for spacing around content */
+  padding: 60px 20px;
+  
+  /* Center the content */
+  text-align: center;
+  
+  /* Ensure content stays readable with slight gradient overlay */
+  background-image: linear-gradient(rgba(0, 113, 197, 0.95), rgba(0, 113, 197, 0.95));
+}
+
+/* Container inside header for better organization */
+header div {
+  /* Set max-width so content doesn't stretch too wide */
+  max-width: 900px;
+  
+  /* Center the container on the page */
+  margin: 0 auto;
+}
+
+/* Intel Logo sizing and placement */
+header img {
+  /* Make logo large and prominent but not overwhelming */
+  width: 120px;
+  height: auto;
+  
+  /* Add spacing below the logo */
+  margin-bottom: 30px;
+  
+  /* Smooth appearance */
+  filter: brightness(1.1);
+}
+
+/* Main Headline (h1) styling */
+header h1 {
+  /* Clean, bold heading */
+  font-size: 48px;
+  font-weight: bold;
+  
+  /* White text for strong contrast against Intel blue background */
+  color: #FFFFFF;
+  
+  /* Professional spacing */
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+  
+  /* Add letter spacing for elegance */
+  letter-spacing: 1px;
+}
+
+/* Subheading (p) styling */
+header p {
+  /* Readable but smaller than main headline */
+  font-size: 18px;
+  
+  /* Light gray-white for excellent contrast against blue */
+  color: #E8E8E8;
+  
+  /* Comfortable spacing */
+  margin: 0;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  
+  /* Extra line height for easy reading */
+  line-height: 1.8;
+  font-weight: 300;
+}
+
+/* Timeline section styling */
+section {
+  /* Neutral background for timeline cards */
+  background-color: #F5F5F5;
+  
+  /* Generous padding */
+  padding: 40px 20px;
+  
+  /* Use Flexbox for layout */
+  display: flex;
+  
+  /* By default, arrange items in a row for horizontal layout */
+  flex-direction: row;
+  
+  /* Allow items to wrap to next line on medium screens */
+  flex-wrap: wrap;
+  
+  /* Enable horizontal scrolling on large screens */
+  overflow-x: auto;
+  
+  /* Smooth scrolling behavior */
+  scroll-behavior: smooth;
+  
+  /* Add gap between cards */
+  gap: 20px;
+  
+  /* Enable CSS scroll snap for smooth navigation */
+  scroll-snap-type: x mandatory;
+}
+
+
+/* Timeline cards */
+section div {
+  /* White background for each card */
+  background-color: #FFFFFF;
+  
+  /* Add consistent padding inside the card */
+  padding: 24px;
+  
+  /* Round the corners for modern look */
+  border-radius: 8px;
+  
+  /* Layered subtle shadow for depth */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1),
+              0 0 0 1px rgba(0, 113, 197, 0.05);
+  
+  /* Add Intel blue left border accent */
+  border-left: 5px solid #0071C5;
+  
+  /* Set flexible sizing for cards */
+  flex: 0 0 300px;
+  
+  /* Ensure cards maintain consistent height for visual alignment */
+  min-height: 280px;
+  
+  /* Allow content to shrink if needed */
+  flex-shrink: 0;
+  
+  /* Enable smooth transitions for all hover effects */
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  /* Add cursor pointer to indicate interactivity */
+  cursor: pointer;
+  
+  /* Slight background color for better definition */
+  background-color: #FAFAFA;
+  
+  /* Snap to center position when scrolling */
+  scroll-snap-align: center;
+  
+  /* Stop scrolling at each card for precise navigation */
+  scroll-snap-stop: always;
+}
+
+/* Hover effect for timeline cards - enhanced with multiple transforms */
+section div:hover {
+  /* Multi-layered enhanced shadow with Intel blue tint */
+  box-shadow: 0 12px 32px rgba(0, 113, 197, 0.2),
+              0 0 20px rgba(0, 113, 197, 0.1),
+              0 0 0 1px rgba(0, 113, 197, 0.15);
+  
+  /* Combine scale and translate for engaging effect */
+  transform: translateY(-8px) scale(1.02);
+  
+  /* Brighten background on hover */
+  background-color: #FFFFFF;
+  
+  /* Enhance border on hover with darker blue */
+  border-left: 5px solid #005FA3;
+}
+
+/* Add special hover state for active/focus */
+section div:focus-within {
+  /* Similar to hover but with focus-specific styling */
+  outline: none;
+  box-shadow: 0 12px 32px rgba(0, 113, 197, 0.2),
+              0 0 20px rgba(0, 113, 197, 0.1),
+              0 0 0 2px rgba(0, 113, 197, 0.3);
+}
+
+/* Card header (year) */
+section h2 {
+  /* Intel brand color for consistency */
+  color: #0071C5;
+  
+  /* Large, bold text */
+  font-size: 32px;
+  font-weight: bold;
+  
+  /* Spacing - top and bottom */
+  margin: 0 0 12px 0;
+  
+  /* Add smooth transition with easing for color and transform */
+  transition: color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              text-shadow 0.3s ease;
+}
+
+/* Year text emphasis on hover */
+section div:hover h2 {
+  /* Darker Intel blue on hover for emphasis */
+  color: #005FA3;
+  
+  /* Subtle scale and move effect on the year */
+  transform: scale(1.05);
+  
+  /* Add subtle glow effect to year */
+  text-shadow: 0 0 10px rgba(0, 113, 197, 0.3);
+}
+
+/* Card subheader (title) */
+section h3 {
+  /* Professional dark gray color */
+  color: #333;
+  
+  /* Medium size */
+  font-size: 24px;
+  
+  /* Consistent spacing */
+  margin: 0 0 16px 0;
+  font-weight: bold;
+  
+  /* Add comprehensive transition for engaging hover effect */
+  transition: color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              letter-spacing 0.3s ease;
+}
+
+/* Title emphasis on hover */
+section div:hover h3 {
+  /* Intel blue accent on hover */
+  color: #0071C5;
+  
+  /* Subtle lift effect on title */
+  transform: translateX(5px);
+  
+  /* Increase letter spacing for emphasis */
+  letter-spacing: 0.5px;
+}
+
+/* Card description text */
+section p {
+  /* Professional dark text for readability */
+  color: #555;
+  
+  /* Comfortable line height for easy reading */
+  line-height: 1.7;
+  
+  /* Reset default margin */
+  margin: 0;
+  
+  /* Readable font size */
+  font-size: 16px;
+  
+  /* Add transition for smooth opacity and color changes on hover */
+  transition: color 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+              opacity 0.3s ease,
+              line-height 0.3s ease;
+}
+
+/* Enhanced description text on hover - slight color shift */
+section div:hover p {
+  /* Slightly darker text for better contrast on hover */
+  color: #333;
+  
+  /* Enhance readability with increased line height */
+  line-height: 1.8;
+}
+
+/* Bottom instruction text - subtle styling */
+body > p {
+  /* Light gray color */
+  color: #999;
+  
+  /* Small font size for secondary information */
+  font-size: 14px;
+  
+  /* Center and add spacing */
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+/* Responsive Media Queries */
+
+/* For tablets and smaller laptops (screens up to 1024px) */
+@media (max-width: 1024px) {
+  /* Stack cards in multiple rows and allow wrapping */
+  section {
+    /* Allow wrapping to multiple rows */
+    flex-wrap: wrap;
+    
+    /* Disable horizontal scrolling on tablet */
+    overflow-x: visible;
+  }
+  
+  /* Make cards responsive on tablets */
+  section div {
+    /* Use flexible width that adjusts to screen size */
+    flex: 0 0 calc(50% - 10px);
+  }
+}
+
+/* For mobile devices (screens up to 768px) */
+@media (max-width: 768px) {
+  /* Stack cards vertically on mobile */
+  section {
+    /* Change to vertical layout */
+    flex-direction: column;
+    
+    /* Ensure no horizontal scrolling */
+    overflow-x: visible;
+    
+    /* Reduce padding on small screens */
+    padding: 20px 10px;
+  }
+  
+  /* Full width cards on mobile */
+  section div {
+    /* Each card takes full width */
+    flex: 0 0 100%;
+    
+    /* Remove the minimum height constraint for vertical layout */
+    min-height: auto;
+  }
+  
+  /* Adjust headline size for mobile */
+  header h1 {
+    /* Make headline responsive */
+    font-size: 32px;
+  }
+  
+  /* Adjust subheading size for mobile */
+  header p {
+    /* Reduce subheading size */
+    font-size: 16px;
+  }
+}
+
+/* For very small phones (screens up to 480px) */
+@media (max-width: 480px) {
+  /* Further reduce header spacing on very small screens */
+  header {
+    padding: 40px 15px;
+  }
+  
+  /* Stack cards vertically */
+  section {
+    padding: 20px 5px;
+  }
+  
+  /* Make very small headline even smaller */
+  header h1 {
+    font-size: 24px;
+    letter-spacing: 0;
+  }
+  
+  /* Reduce subheading */
+  header p {
+    font-size: 14px;
+  }
+  
+  /* Reduce card year size */
+  section h2 {
+    font-size: 24px;
+  }
+  
+  /* Reduce card title size */
+  section h3 {
+    font-size: 18px;
+  }
+}
